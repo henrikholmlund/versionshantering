@@ -16,12 +16,12 @@ button.addEventListener("click", function(){
 
 	for (var i = 0; i < 5; i++) {
 		rutor[i].innerHTML = användarOrd[i];
-	};
 
-	if (valtOrd === användarOrd) {
-		alert("GRattttisss!!");
-	} else {
-		alert("Försök igen!!");
+		if (användarOrd[i] === valtOrd[i]) {
+			rutor[i].style.background = "green";
+		} else {
+			rutor[i].style.background = "red";
+		}
 	}
 
 })
